@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-color:beige;"></body>
+    <head>
+        
+        <title>ThriftyConcept Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="index.html"><img src="Thrifty1.png" class="logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Products.html">Our Products</a></li>
+                    <li><a href="form.html">Forms</a></li>
+        <h1> <p style="color:black">Fill out the Form</p></h1>
+        
+       
+        <form action="process-form.php" method="post">
+            <p style="color:black"> <label for="name">Name</label></p>
+            <input type="text" id="name" name="name" required>
+            <div>
+               <br>
+                <label for="lname"><p style="color:black">Last Name</label> </p>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+            <br>
+            <div>
+                <label for="email"><p style="color:black">Email</label></p>
+                <input type="email" id="email" name="email" required> 
+            </div>
+            <br>
+            <div>
+                <p style="color:black"><label for=tel>Phone Number</label></p>
+                <input type="tel" id="tel" name="tel" required> 
+            </div>
+           
+            
+
+        
+            <p style="color:black"><label for="priority">Priority</label></p>
+            <select id="priority" name="priority" >
+                <option value="1">Clothes</option>
+                <option value="2" selected >Bags</option>
+                <option value="3">Hoodies</option>
+               </select>
+
+               <fieldset>
+                <legend><p style="color:black">Type</p></legend>
+               <label>
+               <input type="radio" name="type" value="1" checked>
+               <p style="color:black"> Add to cart</p>
+               </label>
+              
+               <br>
+
+               <label>
+                <input type="radio" name="type" value="2">
+                <p style="color:black">Checkout</p>
+               </label>
+            </fieldset>
+                
+                <br>
+                <label>
+                    <input type="checkbox" name="terms" >
+                    <p style="color:black"> I agree with the terms and conditions</p>
+                    </label>
+                    <br>
+                    <p style="color:black"><button>Submit</button></p>
+            
+        </form>
+    </body>
+</html>

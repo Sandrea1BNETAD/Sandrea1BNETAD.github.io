@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Thrifty Concept</title>
+    <link rel="stylesheet" href="thrifty.css">
+</head>
+<body>
+    
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="Thrifty1.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Products.html">Our Products</a></li>
+                <li><a href="form.html">Forms</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just a local store<br>It's <span>The Thrifty Concept</span></h2>
+                <p>Good things come to those who thrift.</p>
+            </div>
+        <div class="hoodieimg">
+          <img src="hoodie.jpg" class="hoodie">
+        </div>
+        </div>
+        <ul class="thumbnail">
+            <li><img src="thumb1.png" onclick="imgSlider('hoodie.jpg');changeCirclecolor('#a8896c')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('tshirt.png');changeCirclecolor('#785e4d')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('bags.png');changeCirclecolor('#854836')"></li>
+            <li><img src="thumb4.png" onclick="imgSlider('hats.png');changeCirclecolor('#a64452')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/thethriftyconcept"><img src="facebook.png"></a></li>
+            <li><a href="https://instagram.com/thrifty.concept"><img src="instagram.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+        </ul>
+    </section>
+    
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.hoodie').src = anything;
+        }
+        function changeCirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
